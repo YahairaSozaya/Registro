@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html{
+            height: 100%;
+            width: 100%;
+            padding: 0px;
+            margin:0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+        }
+
+        body{
+            background-color: #BFA5B8;
+            display:grid;
+            justify-content: center;
+            height: 100%;
+            margin:0px;
+            align-content: center;
+            background: linear-gradient(to bottom, #c992ba, rgb(224, 138, 138));
+        }
+
+        .principal{
+            width:500px;
+            height: 400px;
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px 1px black;
+        }
+
+        .imagen{
+            height: 400px;
+        }
+
+        img{
+            height: 100%;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .datos{
+            background-color: black;
+            color:white;
+            border-radius: 0px 10px 10px 0px;
+            padding:30px;
+        }
+
+        .entradas{
+            background-color: black;
+            color:white;
+            font-size: 10px;
+            border:none;
+            border-bottom: 1px solid rgb(136, 131, 131);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            height: 30px;
+            width: 100%;
+        }
+
+        p{
+            padding-bottom:20px;
+            font-size: 20px;
+        }
+
+        button{
+            background-color:rgb(223, 24, 156);
+            width: 100px;
+            border:none;
+            color:white;
+            padding:5px;
+            border-radius: 5px;
+            margin-top:30px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="principal">
+        <div class="imagen">
+            <img src="images/foto.jpg">
+        </div>
+
+        <div class="datos">
+            <p>Registrar info</p>
+            <input class="entradas" type="text" value="Nombre">
+            <input class="entradas" type="text" value="Fecha de nacimiento">
+            <input class="entradas" type="text" value="Género">
+            <input class="entradas" type="text" value="Email">
+            <input class="entradas" type="text" value="Teléfono">
+            <button>COMPRAR</button>
+        </div>
+    </div>
+</body>
+</html>
